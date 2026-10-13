@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WBS ITPLN — Whistleblowing System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#" data-page="home" aria-label="WBS ITPLN beranda">
+      <div class="brand-mark">W</div>
+      <div><strong>WBS <span>ITPLN</span></strong><small>WHISTLEBLOWING SYSTEM</small></div>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#" data-page="home" class="nav-link active">Beranda</a>
+      <a href="#" data-page="report" class="nav-link">Buat Laporan</a>
+      <a href="#" data-page="track" class="nav-link">Cek Status</a>
+      <a href="#" data-page="about" class="nav-link">Tentang WBS</a>
+    </nav>
+    <button class="admin-entry" data-page="admin"><span class="shield">◈</span> Portal Pengelola</button>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main id="app">
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> INTEGRITAS DIMULAI DARI KEPEDULIAN</div>
+          <h1>Berani melapor.<br><em>Jaga integritas.</em></h1>
+          <p class="hero-lead">Saluran pelaporan untuk membantu mewujudkan lingkungan ITPLN yang transparan, akuntabel, dan beretika.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-page="report">Buat Laporan <span>↗</span></button>
+            <button class="btn btn-outline" data-page="track">Lacak Laporan <span>→</span></button>
+          </div>
+          <div class="trust-note"><span class="lock-icon">⌑</span><span><strong>Privasi adalah prioritas.</strong><br>Informasi laporan hanya untuk pihak yang berwenang.</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="visual-grid"></div>
+          <div class="hero-card">
+            <div class="hero-card-top"><div class="mini-icon">✓</div><span>PELAPORAN AMAN</span><span class="live-dot"></span></div>
+            <h3>Suara Anda<br>berarti.</h3>
+            <p>Setiap laporan yang disampaikan dengan itikad baik membantu membangun budaya integritas.</p>
+            <div class="card-bottom"><span>WBS ITPLN</span><span>01 / 03</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span class="chip-symbol">◉</span><div><b>Privasi Terjaga</b><small>Akses terbatas</small></div></div>
+          <div class="floating-chip chip-bottom"><span class="chip-symbol amber">↗</span><div><b>Tindak Lanjut</b><small>Lebih terstruktur</small></div></div>
+          <div class="hero-number">01 <span>—</span> 04</div>
+        </div>
+      </div>
+      <section class="section-wrap">
+        <div class="section-heading"><div><div class="eyebrow muted">MULAI DARI SINI</div><h2>Bagaimana kami dapat membantu?</h2></div><p>Pilih langkah yang sesuai dengan kebutuhan Anda.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon blue">↗</div><div class="feature-number">01</div><h3>Sampaikan Laporan</h3><p>Jelaskan dugaan pelanggaran secara runtut dan sertakan bukti pendukung jika tersedia.</p><button class="text-action" data-page="report">Mulai melapor <span>→</span></button></article>
+          <article class="feature-card"><div class="feature-icon green">⌕</div><div class="feature-number">02</div><h3>Pantau Status</h3><p>Gunakan kode laporan untuk melihat pembaruan status tanpa membuka informasi rahasia.</p><button class="text-action" data-page="track">Cek status laporan <span>→</span></button></article>
+          <article class="feature-card"><div class="feature-icon amber">◇</div><div class="feature-number">03</div><h3>Pahami Prosesnya</h3><p>Pelajari prinsip pelaporan, penggunaan data, dan batasan informasi yang ditampilkan.</p><button class="text-action" data-page="about">Pelajari WBS <span>→</span></button></article>
+        </div>
+      </section>
+      <section class="notice-band"><div class="notice-symbol">i</div><div><strong>Gunakan kanal ini secara bertanggung jawab.</strong><p>Sampaikan informasi berdasarkan apa yang Anda ketahui. Hindari menyebarkan laporan atau bukti kepada pihak yang tidak berkepentingan.</p></div><span class="notice-decoration">WBS / ITPLN</span></section>
+    </section>
+
+    <section class="page" id="page-report">
+      <div class="page-banner"><div class="eyebrow muted">KANAL PELAPORAN</div><h1>Buat laporan</h1><p>Isi informasi dengan jelas agar laporan dapat ditelaah oleh pihak yang berwenang.</p><div class="banner-mark">01 <span>/</span> REPORT</div></div>
+      <div class="form-layout">
+        <div class="form-main">
+          <div class="form-progress"><div class="progress-step current"><span>1</span><b>Informasi laporan</b></div><div class="progress-line"></div><div class="progress-step"><span>2</span><b>Konfirmasi</b></div></div>
+          <form id="reportForm">
+            <div class="form-section-title"><span>01</span><div><h2>Detail kejadian</h2><p>Informasi bertanda * wajib diisi.</p></div></div>
+            <label class="field-label" for="category">Kategori laporan <span>*</span></label>
+            <select id="category" required><option value="">Pilih kategori laporan</option><option>Pelanggaran etika</option><option>Penyalahgunaan wewenang</option><option>Korupsi / pungutan tidak semestinya</option><option>Konflik kepentingan</option><option>Kekerasan / perundungan</option><option>Pelanggaran akademik</option><option>Pelanggaran keamanan / data</option><option>Lainnya</option></select>
+            <label class="field-label" for="title">Judul laporan <span>*</span></label>
+            <input id="title" required maxlength="120" placeholder="Ringkasan singkat kejadian" />
+            <div class="two-col"><div><label class="field-label" for="eventDate">Tanggal kejadian</label><input id="eventDate" type="date" /></div><div><label class="field-label" for="location">Lokasi kejadian</label><input id="location" placeholder="Contoh: gedung / unit terkait" /></div></div>
+            <label class="field-label" for="narrative">Kronologi kejadian <span>*</span></label>
+            <textarea id="narrative" required rows="6" placeholder="Jelaskan apa yang terjadi, kapan, di mana, dan informasi relevan lainnya. Hindari asumsi yang tidak dapat Anda jelaskan."></textarea>
+            <div class="helper-row"><span>Jangan sertakan kata sandi atau data pribadi yang tidak relevan.</span><span id="charCount">0 / 2000</span></div>
+            <label class="field-label" for="involved">Pihak / unit terkait (jika diketahui)</label><input id="involved" placeholder="Nama atau unit terkait — opsional" />
+            <label class="field-label" for="evidence">Lampiran bukti (opsional)</label><div class="upload-box"><input id="evidence" type="file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.mp4" /><div class="upload-icon">↑</div><div><strong>Pilih file bukti</strong><p>Demo UI: file tidak diunggah ke server.</p><small>JPG, PNG, PDF, DOC, MP4</small></div></div>
+            <div class="form-section-title section-spaced"><span>02</span><div><h2>Identitas pelapor</h2><p>Pilih mekanisme pelaporan yang sesuai.</p></div></div>
+            <div class="identity-options"><label class="identity-option selected" id="anonOption"><input type="radio" name="identity" value="anonim" checked /><span class="radio-dot"></span><span><b>Laporkan secara anonim</b><small>Nama tidak diminta pada form demo ini.</small></span><span class="identity-tag">Privasi</span></label><label class="identity-option" id="namedOption"><input type="radio" name="identity" value="identified" /><span class="radio-dot"></span><span><b>Sertakan identitas</b><small>Untuk tindak lanjut yang memerlukan komunikasi.</small></span></label></div>
+            <div id="identityFields" class="identity-fields hidden"><div class="two-col"><div><label class="field-label" for="reporterName">Nama</label><input id="reporterName" placeholder="Nama Anda" /></div><div><label class="field-label" for="reporterContact">Email / kontak</label><input id="reporterContact" placeholder="Kontak yang dapat dihubungi" /></div></div></div>
+            <label class="consent-check"><input type="checkbox" id="confirmAccurate" required /><span>Saya menyatakan informasi yang saya sampaikan sesuai dengan pengetahuan saya dan diberikan dengan itikad baik.</span></label>
+            <label class="consent-check"><input type="checkbox" id="confirmPrivacy" required /><span>Saya memahami bahwa ini adalah prototype demonstrasi dan data tidak dikirim ke server produksi.</span></label>
+            <div class="form-actions"><button type="button" class="btn btn-outline" data-page="home">Batal</button><button class="btn btn-primary" type="submit">Kirim laporan <span>→</span></button></div>
+          </form>
+        </div>
+        <aside class="form-aside"><div class="aside-card privacy-card"><div class="aside-icon">⌑</div><h3>Privasi & kerahasiaan</h3><p>Dalam implementasi nyata, akses identitas dan isi laporan harus dibatasi berdasarkan kewenangan.</p><ul><li>Gunakan informasi yang relevan</li><li>Simpan kode laporan dengan aman</li><li>Hindari membagikan bukti ke publik</li></ul></div><div class="aside-card"><div class="aside-icon amber-bg">!</div><h3>Perlu diperhatikan</h3><p>Jangan gunakan kanal demo ini untuk mengirim laporan nyata. Semua data hanya tersimpan sementara di browser.</p></div><div class="aside-footer">WBS ITPLN <span>•</span> Prototype UI</div></aside>
+      </div>
+    </section>
+
+    <section class="page" id="page-track">
+      <div class="page-banner"><div class="eyebrow muted">TRANSPARANSI PROSES</div><h1>Cek status laporan</h1><p>Masukkan kode laporan untuk melihat status demonstrasi.</p><div class="banner-mark">02 <span>/</span> TRACK</div></div>
+      <div class="track-container"><div class="track-search-card"><div class="track-icon">⌕</div><h2>Temukan laporan Anda</h2><p>Masukkan kode laporan yang diperoleh setelah pengiriman.</p><form id="trackForm" class="track-form"><input id="trackingCode" placeholder="Contoh: WBS-2026-00128" required /><button class="btn btn-primary" type="submit">Cek status <span>→</span></button></form><div class="demo-hint"><span>✦</span> Coba kode demo: <button id="useDemoCode">WBS-2026-00128</button></div></div><div id="trackResult" class="track-result hidden"></div><div class="track-security"><span class="lock-icon">⌑</span><div><b>Informasi yang aman dan seperlunya</b><p>Dalam sistem nyata, kode pelacakan sebaiknya dilengkapi verifikasi tambahan seperti PIN rahasia. Status tidak boleh membuka identitas pelapor atau detail investigasi.</p></div></div></div>
+    </section>
+
+    <section class="page" id="page-about">
+      <div class="page-banner"><div class="eyebrow muted">MENGENAL WBS</div><h1>Integritas adalah tanggung jawab bersama.</h1><p>WBS merupakan kanal untuk menyampaikan dugaan pelanggaran secara bertanggung jawab.</p><div class="banner-mark">03 <span>/</span> ABOUT</div></div>
+      <div class="about-layout"><div class="about-copy"><div class="eyebrow muted">PRINSIP UTAMA</div><h2>Pelaporan yang bertanggung jawab, penanganan yang terukur.</h2><p>Prototype ini menggambarkan kemungkinan pengembangan alur pelaporan digital: dari penerimaan laporan, verifikasi awal, penugasan kepada pihak berwenang, sampai dokumentasi tindak lanjut.</p><p>Rancangan ini merupakan konsep awal untuk didiskusikan dengan ITPLN. Alur, kategori, kewenangan, kebijakan privasi, dan teknologi harus divalidasi terhadap SOP yang berlaku.</p></div><div class="principles"><article><span>01</span><div><h3>Kerahasiaan</h3><p>Informasi hanya diakses oleh pihak yang berwenang.</p></div></article><article><span>02</span><div><h3>Akuntabilitas</h3><p>Aktivitas penting dicatat untuk mendukung pertanggungjawaban.</p></div></article><article><span>03</span><div><h3>Perlindungan data</h3><p>Data dikumpulkan seperlunya dan dikelola secara aman.</p></div></article><article><span>04</span><div><h3>Tindak lanjut</h3><p>Laporan ditelaah melalui proses yang jelas dan terkontrol.</p></div></article></div></div>
+      <div class="about-note"><strong>Catatan untuk presentasi</strong><p>Prototype ini bukan sistem resmi ITPLN dan tidak terhubung dengan kanal WBS yang sedang berjalan. Semua data dan status yang ditampilkan adalah contoh.</p></div>
+    </section>
+
+    <section class="page" id="page-admin">
+      <div class="admin-shell">
+        <aside class="admin-sidebar"><a class="brand admin-brand" href="#" data-page="admin"><div class="brand-mark">W</div><div><strong>WBS <span>ITPLN</span></strong><small>PORTAL PENGELOLA</small></div></a><div class="side-label">MENU UTAMA</div><a href="#" class="side-item selected" data-admin-tab="overview"><span>▦</span> Ringkasan</a><a href="#" class="side-item" data-admin-tab="reports"><span>☷</span> Daftar Laporan <i id="sideCount">6</i></a><a href="#" class="side-item" data-admin-tab="audit"><span>◷</span> Audit Log</a><div class="sidebar-bottom"><div class="user-avatar">AW</div><div><b>Admin WBS</b><small>Administrator demo</small></div><button id="adminLogout" title="Keluar">↗</button></div></aside>
+        <div class="admin-main"><div class="admin-topbar"><div><div class="eyebrow muted">PORTAL PENGELOLA</div><h1 id="adminTitle">Ringkasan laporan</h1></div><div class="admin-top-right"><span class="demo-pill"><span></span> DATA DEMO</span><div class="admin-date" id="todayDate"></div></div></div>
+          <div id="adminOverview" class="admin-tab-content">
+            <div class="welcome-panel"><div><span class="welcome-label">WBS ITPLN / OVERVIEW</span><h2>Selamat datang, Admin.</h2><p>Berikut ringkasan laporan dalam lingkungan demonstrasi.</p></div><div class="welcome-art">W</div></div>
+            <div class="stat-grid"><article class="stat-card"><div class="stat-top"><span>Total laporan</span><span class="stat-icon blue">▤</span></div><div class="stat-value" id="statTotal">128</div><div class="stat-foot"><span class="trend">↗</span> Data kumulatif demo</div></article><article class="stat-card"><div class="stat-top"><span>Baru masuk</span><span class="stat-icon amber">◷</span></div><div class="stat-value" id="statNew">12</div><div class="stat-foot"><span class="status-dot red"></span> Perlu verifikasi</div></article><article class="stat-card"><div class="stat-top"><span>Dalam proses</span><span class="stat-icon purple">↻</span></div><div class="stat-value" id="statProcess">37</div><div class="stat-foot">Sedang ditindaklanjuti</div></article><article class="stat-card"><div class="stat-top"><span>Selesai</span><span class="stat-icon green">✓</span></div><div class="stat-value" id="statDone">58</div><div class="stat-foot">Status ditutup</div></article></div>
+            <div class="dashboard-grid"><section class="panel report-panel"><div class="panel-heading"><div><h3>Laporan terbaru</h3><p>Contoh laporan yang masuk ke sistem</p></div><button class="text-action" data-admin-tab="reports">Lihat semua →</button></div><div class="table-wrap"><table><thead><tr><th>KODE LAPORAN</th><th>KATEGORI</th><th>TANGGAL</th><th>STATUS</th></tr></thead><tbody id="recentRows"></tbody></table></div></section><section class="panel category-panel"><div class="panel-heading"><div><h3>Kategori laporan</h3><p>Distribusi contoh data</p></div><span class="tiny-tag">DEMO</span></div><div class="category-bars"><div class="bar-row"><div><span>Etika</span><b>32</b></div><div class="bar-track"><span style="width:72%"></span></div></div><div class="bar-row"><div><span>Penyalahgunaan wewenang</span><b>24</b></div><div class="bar-track"><span style="width:54%"></span></div></div><div class="bar-row"><div><span>Pelayanan</span><b>21</b></div><div class="bar-track"><span style="width:47%"></span></div></div><div class="bar-row"><div><span>Keamanan / data</span><b>17</b></div><div class="bar-track"><span style="width:38%"></span></div></div><div class="bar-row"><div><span>Lainnya</span><b>34</b></div><div class="bar-track"><span style="width:76%"></span></div></div></div><div class="privacy-callout"><span>⌑</span><p>Dashboard menampilkan ringkasan. Akses detail laporan dibatasi sesuai kewenangan.</p></div></section></div>
+          </div>
+          <div id="adminReports" class="admin-tab-content hidden"><section class="panel full-panel"><div class="panel-heading reports-heading"><div><h3>Daftar laporan</h3><p>Kelola status laporan demonstrasi</p></div><div class="report-tools"><input id="adminSearch" placeholder="Cari kode / kategori..." /><select id="statusFilter"><option value="">Semua status</option><option>Baru masuk</option><option>Dalam verifikasi</option><option>Ditindaklanjuti</option><option>Selesai</option></select></div></div><div class="table-wrap"><table><thead><tr><th>KODE</th><th>KATEGORI</th><th>JUDUL</th><th>TANGGAL</th><th>STATUS</th><th></th></tr></thead><tbody id="allRows"></tbody></table></div><div class="table-foot"><span id="resultCount">6 laporan</span><span>Data contoh untuk demonstrasi</span></div></section></div>
+          <div id="adminAudit" class="admin-tab-content hidden"><section class="panel full-panel"><div class="panel-heading"><div><h3>Audit log</h3><p>Aktivitas penting pada prototype</p></div><span class="tiny-tag">SIMULASI</span></div><div id="auditList" class="audit-list"></div></section></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><div class="brand-mark small">W</div><div><strong>WBS ITPLN</strong><small>WHISTLEBLOWING SYSTEM</small></div></div><p>Prototype konsep untuk kebutuhan presentasi dan evaluasi awal.</p><span>© 2026 • DEMO UI</span></footer>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="detailModal" class="modal-backdrop hidden"><div class="modal"><button class="modal-close" id="closeModal">×</button><div class="eyebrow muted">DETAIL LAPORAN / DEMO</div><h2 id="modalTitle">Detail laporan</h2><div id="modalContent"></div><div class="modal-actions"><label for="modalStatus">Ubah status</label><select id="modalStatus"><option>Baru masuk</option><option>Dalam verifikasi</option><option>Ditindaklanjuti</option><option>Selesai</option></select><button class="btn btn-primary" id="saveStatus">Simpan status</button></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
