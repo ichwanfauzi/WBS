@@ -1,21 +1,29 @@
-# WBS ITPLN — Prototype UI
+# 🛡️ Whistleblowing System (WBS)
 
-Prototype frontend untuk presentasi konsep magang, bukan sistem resmi ITPLN.
+> Platform pelaporan pelanggaran dan kecurangan (*fraud*) secara online, aman, dan anonim untuk mendukung transparansi serta tata kelola organisasi yang baik (*Good Corporate Governance*).
 
-## Menjalankan
-1. Ekstrak folder ZIP.
-2. Buka `index.html` di browser (Chrome/Edge disarankan).
-3. Navigasi Beranda, Buat Laporan, Cek Status, Tentang WBS, atau Portal Pengelola.
+---
 
-## Fitur demo
-- Form laporan dengan pilihan anonim / identitas.
-- Kode laporan demo dan pelacakan status.
-- Dashboard pengelola, filter/cari laporan, detail, ubah status.
-- Audit log simulasi.
-- Responsive untuk layar desktop dan ponsel.
+## 🌟 Fitur Utama
 
-## Penting
-- Data disimpan hanya di memori JavaScript selama tab terbuka; refresh halaman mengembalikan data demo.
-- Tidak ada backend, database, autentikasi sungguhan, upload file ke server, atau pengamanan produksi.
-- Jangan masukkan laporan nyata atau data pribadi ke prototype ini.
-- Sebelum implementasi, validasi alur, role, kategori, SOP, kebijakan retensi, keamanan, dan privasi bersama pihak ITPLN.
+- 🔒 **Pelaporan Anonim (Anonymous Reporting):** Memungkinkan pelapor (*whistleblower*) mengirimkan laporan tanpa melampirkan identitas pribadi.
+- 📁 **Manajemen Bukti Pendukung:** Pengunggahan dokumen, foto, atau berkas pendukung sebagai bukti validasi laporan.
+- 🔑 **Sistem Kunci / Tiket Pelaporan:** Generasi kode unik/tiket untuk pelapor agar dapat memantau status tindak lanjut laporan tanpa perlu *login*.
+- 📊 **Dashboard Administrator & Investigator:** Panel khusus tim internal untuk menindaklanjuti, memvalidasi, dan memperbarui status investigasi laporan.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, JavaScript / React / Tailwind CSS
+- **Backend:** Python (FastAPI / Django / Flask) atau PHP / Node.js
+- **Database:** MySQL / PostgreSQL
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. **Clone repositori:**
+   ```bash
+   git clone [https://github.com/ichwanfauzi/whistleblowing-system-web.git](https://github.com/ichwanfauzi/whistleblowing-system-web.git)
+   cd whistleblowing-system-web
